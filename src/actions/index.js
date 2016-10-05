@@ -7,7 +7,7 @@ const API_KEY = "?key=robotron";
 export const CREATE_POST = 'CREATE_POST'; 
 
 export function fetchPosts(){
-	const request = axios.get(`${ROOT_URL}/posts#{API_KEY}`);
+	const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
 
 	return {
 		type: FETCH_POSTS, 
